@@ -46,6 +46,7 @@ export default route(function (/* { store, ssrContext } */) {
       !isUserLoggedIn
       && to.path !== '/auth'
       && to.path !== '/auth/sign-in'
+      && to.path !== '/auth/reset-password'
       && to.path !== '/auth/sign-up'
       && to.path !== '/auth/sign-up/school'
       && to.path !== '/auth/sign-up/company'
@@ -58,6 +59,7 @@ export default route(function (/* { store, ssrContext } */) {
       && (
         to.path === '/auth'
         || to.path === '/auth/sign-in'
+        || to.path === '/auth/reset-password'
         || to.path === '/auth/sign-up'
         || to.path === '/auth/sign-up/school'
         || to.path === '/auth/sign-up/company'

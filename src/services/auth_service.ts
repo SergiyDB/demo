@@ -99,4 +99,18 @@ export default class AuthService {
     });
   }
 
+  resetUserPassword(email: string) {
+    return new Promise((resolve, reject) => {
+
+      if (true) {
+        console.log(email)
+
+        resolve({ status: 'ok' });
+
+      } else {
+        reject(new Error('Incorrect email'));
+      }
+    });
+  }
+
 }

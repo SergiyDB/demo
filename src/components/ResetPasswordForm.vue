@@ -5,8 +5,8 @@
       <img src="src/assets/images/logos/robo_logo.jpg">
     </q-avatar>
 
-    <div class="text-h3 text-weight-bold">Sign In</div>
-    <div class="text-body1">Don't have an account? <span @click="navToSignUp" style="cursor: pointer" class="text-blue text-weight-bold">Sign Up</span></div>
+    <div class="text-h3 text-weight-bold">Forgot password?</div>
+    <div class="text-body1">Fill the form to reset your password</div>
 
     <q-form
       @submit="onSubmit"
@@ -24,27 +24,10 @@
         ]"
       />
 
-      <q-input
-        filled
-        type="password"
-        v-model="password"
-        label="Password *"
-        lazy-rules
-        :rules="[
-          val => val !== null && val !== '' || 'Please enter your password',
-          val => val.length >= 8 || 'Your password should be at least 8 characters'
-          // val => val > 0 && val < 100 || 'Please type a real age'
-        ]"
-      />
-
-      <div class="row justify-between items-center">
-        <q-checkbox class="text-body1" size="lg" dense v-model="rememberMe">Remember Me</q-checkbox>
-        <div class="text-body1"><span class="text-blue text-weight-bold" style="cursor: pointer" @click="navToResetPassword">Forgot password</span></div>
-      </div>
+      <div class="text-body1">Return to <span class="text-blue text-weight-bold" style="cursor: pointer" @click="navToSignIn">Sign In</span></div>
 
       <div class="q-py-md">
-        <q-btn class="full-width" size="1rem" label="sign in" type="submit" color="primary"/>
-        <!-- <q-btn size="1rem" label="Reset" type="reset" color="primary" flat class="q-ml-sm" /> -->
+        <q-btn class="full-width" size="1rem" label="Send reset link" type="submit" color="primary"/>
       </div>
     </q-form>
 
@@ -56,7 +39,7 @@ import { useQuasar } from 'quasar'
 import { useRouter } from 'vue-router';
 import { ref } from 'vue';
 import AuthService from 'src/services/auth_service';
-import { getState, setUser } from 'src/app_state/app_state';
+// import { getState, setUser } from 'src/app_state/app_state';
 
 
 const $q = useQuasar()
@@ -65,28 +48,28 @@ const router = useRouter();
 const authService = new AuthService();
 
 const email = ref(null)
-const password = ref(null)
-const rememberMe = ref(false)
 
 const onSubmit = async () => {
 
   try {
-    const result = await authService.signIn(email.value.trim(), password.value.trim())
+    const result = await authService.resetUserPassword(email.value.trim())
 
     if (result.status === 'ok') {
 
-      setUser(result.user);
+      // setUser(result.user);
 
-      const { user } = getState();
-      const userType = user?.user_type;
+      // const { user } = getState();
+      // const userType = user?.user_type;
 
-      if (userType === 'school') {
-        router.push('/school');
-      } else if (userType === 'company') {
-        router.push('/company');
-      } else {
-        router.push('/');
-      }
+      // if (userType === 'school') {
+      //   router.push('/school');
+      // } else if (userType === 'company') {
+      //   router.push('/company');
+      // } else {
+      //   router.push('/');
+      // }
+
+      navToSignIn();
 
       $q.notify({
         color: 'green-4',
@@ -95,14 +78,13 @@ const onSubmit = async () => {
         message: 'Submitted'
       });
 
-      // router.push({ path: '/' });
     } else {
 
       $q.notify({
         color: 'red-5',
         textColor: 'white',
         icon: 'warning',
-        message: 'Invalid email or password'
+        message: 'Invalid email'
       });
 
       onReset();
@@ -143,16 +125,12 @@ const onSubmit = async () => {
 
 const onReset = () => {
   email.value = null
-  password.value = null
-  rememberMe.value = false
+  // password.value = null
+  // rememberMe.value = false
 }
 
-const navToSignUp = () => {
-  router.push('/auth/sign-up');
-}
-
-const navToResetPassword = () => {
-  router.push('/auth/reset-password');
+const navToSignIn = () => {
+  router.push('/auth/sign-in');
 }
 
 </script>

@@ -25,10 +25,8 @@ const routes: RouteRecordRaw[] = [
     path: '/auth',
     component: () => import('pages/AuthPage.vue'),
     children: [
-      {
-        path: 'sign-in', component: () => import('components/SignInForm.vue')
-      },
-
+      { path: 'sign-in', component: () => import('components/SignInForm.vue') },
+      { path: 'reset-password', component: () => import('components/ResetPasswordForm.vue') },
       {
         path: 'sign-up', component: () => import('components/SignUpFormSelection.vue'),
         children: [
@@ -38,6 +36,7 @@ const routes: RouteRecordRaw[] = [
           {path: 'tutor', component: () => import('components/SignUpFormTutor.vue')},
         ]
       },
+
 
       {
         path: '', redirect: 'auth/sign-in'
