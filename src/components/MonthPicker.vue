@@ -6,6 +6,7 @@
       bg-color= "primary"
       color=    "white"
       dense
+      square
       :disable= "isFetching"
     >
       <template v-slot:default>
