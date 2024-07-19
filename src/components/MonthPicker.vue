@@ -1,0 +1,132 @@
+<template>
+  <div class="date-selector">
+    <q-field
+      class=    "cursor-pointer"
+      filled
+      bg-color= "primary"
+      color=    "white"
+      dense
+      :disable= "isFetching"
+    >
+      <template v-slot:default>
+        <div
+          class="self-center q-pa-sm full-width no-outline text-weight-bold"
+          tabindex="0"
+        >
+          Selected months: {{ UIdataModel.length }}
+        </div>
+
+        <q-tooltip anchor="center right" self="center left" :offset="[10, 10]">
+          <div class="text-weight-bolder text-caption">
+            {{ getSortedSelectedMonthLabels().join(', ') }} {{ currentYear }}
+          </div>
+        </q-tooltip>
+
+        <q-menu
+          :max-width= "`${0.85 * resize.width}px`"
+          anchor=     "bottom middle"
+          self=       "top middle"
+          fit
+          @hide=      "() => updateModelValue()"
+        >
+          <div class="date-selector__picker q-px-lg q-py-md">
+            <div class="date-selector__picker__month-picker row">
+              <q-btn
+                v-for=        "month in monthsList"
+                :key=         "month.value"
+                class=        "date-selector__picker__month-picker__pick-month-button col-4 text-weight-regular"
+                :label=       "month.label"
+                :disable=     "isMonthDisabled(month.value) || isFetching"
+                :flat=        "!isMonthSelected(month.value)"
+                :color=       "isMonthSelected(month.value) ? 'primary' : 'standart'"
+                :text-color=  "isMonthSelected(month.value) ? 'white' : 'black'"
+                @click=       "selectMonth(month.value)"
+                size=         "md"
+                align=        "center"
+                padding=      "xs"
+                unelevated
+              />
+            </div>
+          </div>
+        </q-menu>
+      </template>
+
+      <template v-slot:append>
+        <q-icon
+          name=   "event"
+          color=  "white"
+          class=  "cursor-pointer"
+        />
+      </template>
+
+    </q-field>
+    <q-resize-observer @resize="onResize" />
+  </div>
+</template>
+
+<script setup>
+
+import {
+  ref,
+  computed,
+} from 'vue';
+
+const props = defineProps({
+  modelValue:   { type: Array,    required: true },
+  localeStr:    { type: String,   required: true },
+  isFetching:   { type: Boolean,  required: true },
+});
+
+const emit = defineEmits(['update:modelValue']);
+
+const localModel = computed({
+  get: () => props?.modelValue,
+  set: () => updateModelValue(),
+});
+
+const UIdataModel = ref([...localModel.value]);
+
+const currentYear = ref(new Date().getFullYear());
+
+const updateModelValue = () => {
+  emit('update:modelValue', UIdataModel.value);
+};
+
+function getMonthsArray(locale) {
+  const months = [];
+  for (let i = 0; i < 12; i++) {
+    const monthName = new Date(currentYear.value, i).toLocaleString(locale, { month: 'short' });
+    months.push({ value: i, label: monthName });
+  }
+  return months;
+}
+
+const resize = ref(0);
+
+const monthsList = computed(() => getMonthsArray(props.localeStr));
+
+const selectMonth = (val) => {
+  if (isMonthSelected(val)) {
+    UIdataModel.value = UIdataModel.value.filter(month => month !== val);
+  } else {
+    UIdataModel.value.push(val);
+  }
+};
+
+const isMonthSelected = (val) => UIdataModel.value.includes(val);
+
+const isMonthDisabled = (val) => val > new Date().getMonth();
+
+const onResize = function (size) {
+  resize.value = size;
+};
+
+const getSortedSelectedMonthLabels = () => {
+  return UIdataModel.value
+    .sort((a, b) => a - b)
+    .map(monthValue => monthsList.value.find(month => month.value === monthValue)?.label);
+};
+</script>
+
+<style lang="scss">
+</style>
