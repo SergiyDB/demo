@@ -2,7 +2,7 @@ export const companyTeachersData = [
   {
     id: 1,
     name: 'Anthony Bush',
-    imageSrc: '/assets/images/avatars/male-20.jpg',
+    imageSrc: '/static/images/avatars/male-20.jpg',
     position: 'Senior Language Instructor',
     contacts: {
       email: 'anthony.bush@example.com',
@@ -12,7 +12,7 @@ export const companyTeachersData = [
   {
     id: 2,
     name: 'Sarah Johnson',
-    imageSrc: '/assets/images/avatars/female-20.jpg',
+    imageSrc: '/static/images/avatars/female-20.jpg',
     position: 'English Teacher',
     contacts: {
       email: 'sarah.johnson@example.com',
@@ -22,7 +22,7 @@ export const companyTeachersData = [
   {
     id: 3,
     name: 'Michael Lee',
-    imageSrc: '/assets/images/avatars/male-19.jpg',
+    imageSrc: '/static/images/avatars/male-19.jpg',
     position: 'Spanish Teacher',
     contacts: {
       email: 'michael.lee@example.com',
@@ -32,7 +32,7 @@ export const companyTeachersData = [
   {
     id: 4,
     name: 'Emma Brown',
-    imageSrc: '/assets/images/avatars/female-19.jpg',
+    imageSrc: '/static/images/avatars/female-19.jpg',
     position: 'French Teacher',
     contacts: {
       email: 'emma.brown@example.com',
@@ -42,7 +42,7 @@ export const companyTeachersData = [
   {
     id: 5,
     name: 'David Wilson',
-    imageSrc: '/assets/images/avatars/male-18.jpg',
+    imageSrc: '/static/images/avatars/male-18.jpg',
     position: 'Lead English Language Instructor',
     contacts: {
       email: 'david.wilson@example.com',
@@ -52,7 +52,7 @@ export const companyTeachersData = [
   {
     id: 6,
     name: 'Elizabeth Taylor',
-    imageSrc: '/assets/images/avatars/female-18.jpg',
+    imageSrc: '/static/images/avatars/female-18.jpg',
     position: 'German Teacher',
     contacts: {
       email: 'elizabeth.taylor@example.com',
@@ -62,7 +62,7 @@ export const companyTeachersData = [
   {
     id: 7,
     name: 'Emily Davis',
-    imageSrc: '/assets/images/avatars/female-17.jpg',
+    imageSrc: '/static/images/avatars/female-17.jpg',
     position: 'Italian Teacher',
     contacts: {
       email: 'emily.davis@example.com',
@@ -72,7 +72,7 @@ export const companyTeachersData = [
   {
     id: 8,
     name: 'Christopher Moore',
-    imageSrc: '/assets/images/avatars/male-17.jpg',
+    imageSrc: '/static/images/avatars/male-17.jpg',
     position: 'Portuguese Teacher',
     contacts: {
       email: 'christopher.moore@example.com',
@@ -82,7 +82,7 @@ export const companyTeachersData = [
   {
     id: 9,
     name: 'Daniel Taylor',
-    imageSrc: '/assets/images/avatars/male-16.jpg',
+    imageSrc: '/static/images/avatars/male-16.jpg',
     position: 'Japanese Teacher',
     contacts: {
       email: 'daniel.taylor@example.com',
@@ -95,7 +95,7 @@ export const schoolTeachersData = [
   {
     id: 1,
     name: 'Anthony Bush',
-    imageSrc: '/assets/images/avatars/male-20.jpg',
+    imageSrc: '/static/images/avatars/male-20.jpg',
     position: 'Senior Language Instructor',
     contacts: {
       email: 'anthony.bush@example.com',
@@ -105,7 +105,7 @@ export const schoolTeachersData = [
   {
     id: 2,
     name: 'Sarah Johnson',
-    imageSrc: '/assets/images/avatars/female-20.jpg',
+    imageSrc: '/static/images/avatars/female-20.jpg',
     position: 'English Teacher',
     contacts: {
       email: 'sarah.johnson@example.com',
@@ -115,7 +115,7 @@ export const schoolTeachersData = [
   {
     id: 3,
     name: 'Michael Lee',
-    imageSrc: '/assets/images/avatars/male-19.jpg',
+    imageSrc: '/static/images/avatars/male-19.jpg',
     position: 'Spanish Teacher',
     contacts: {
       email: 'michael.lee@example.com',
@@ -125,7 +125,7 @@ export const schoolTeachersData = [
   {
     id: 4,
     name: 'Emma Brown',
-    imageSrc: '/assets/images/avatars/female-19.jpg',
+    imageSrc: '/static/images/avatars/female-19.jpg',
     position: 'French Teacher',
     contacts: {
       email: 'emma.brown@example.com',
@@ -135,7 +135,7 @@ export const schoolTeachersData = [
   {
     id: 5,
     name: 'David Wilson',
-    imageSrc: '/assets/images/avatars/male-18.jpg',
+    imageSrc: '/static/images/avatars/male-18.jpg',
     position: 'Lead English Language Instructor',
     contacts: {
       email: 'david.wilson@example.com',
@@ -145,7 +145,7 @@ export const schoolTeachersData = [
   {
     id: 6,
     name: 'Elizabeth Taylor',
-    imageSrc: '/assets/images/avatars/female-18.jpg',
+    imageSrc: '/static/images/avatars/female-18.jpg',
     position: 'German Teacher',
     contacts: {
       email: 'elizabeth.taylor@example.com',
@@ -155,7 +155,7 @@ export const schoolTeachersData = [
   {
     id: 7,
     name: 'Emily Davis',
-    imageSrc: '/assets/images/avatars/female-17.jpg',
+    imageSrc: '/static/images/avatars/female-17.jpg',
     position: 'Italian Teacher',
     contacts: {
       email: 'emily.davis@example.com',
@@ -165,7 +165,7 @@ export const schoolTeachersData = [
   {
     id: 8,
     name: 'Christopher Moore',
-    imageSrc: '/assets/images/avatars/male-17.jpg',
+    imageSrc: '/static/images/avatars/male-17.jpg',
     position: 'Portuguese Teacher',
     contacts: {
       email: 'christopher.moore@example.com',
@@ -175,7 +175,7 @@ export const schoolTeachersData = [
   {
     id: 9,
     name: 'Daniel Taylor',
-    imageSrc: '/assets/images/avatars/male-16.jpg',
+    imageSrc: '/static/images/avatars/male-16.jpg',
     position: 'Japanese Teacher',
     contacts: {
       email: 'daniel.taylor@example.com',

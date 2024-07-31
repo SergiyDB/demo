@@ -5,7 +5,7 @@
   >
     <img
       style="object-fit: contain; height: 100px"
-      src="/assets/images/logos/uni_logo.jpeg"
+      src="/static/images/logos/uni_logo.jpeg"
       alt=""
     />
 

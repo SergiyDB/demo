@@ -1,7 +1,7 @@
 export const companyStudentsSummaryData = [
   {
     id: 1,
-    imageSrc: '/assets/images/avatars/male-01.jpg',
+    imageSrc: '/static/images/avatars/male-01.jpg',
     grade: '11 C',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -74,7 +74,7 @@ export const companyStudentsSummaryData = [
   },
   {
     id: 2,
-    imageSrc: '/assets/images/avatars/female-01.jpg',
+    imageSrc: '/static/images/avatars/female-01.jpg',
     grade: '10 A',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -147,7 +147,7 @@ export const companyStudentsSummaryData = [
   },
   {
     id: 3,
-    imageSrc: '/assets/images/avatars/male-02.jpg',
+    imageSrc: '/static/images/avatars/male-02.jpg',
     grade: '9 B',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -220,7 +220,7 @@ export const companyStudentsSummaryData = [
   },
   {
     id: 4,
-    imageSrc: '/assets/images/avatars/female-02.jpg',
+    imageSrc: '/static/images/avatars/female-02.jpg',
     grade: '10 A',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -293,7 +293,7 @@ export const companyStudentsSummaryData = [
   },
   {
     id: 5,
-    imageSrc: '/assets/images/avatars/male-03.jpg',
+    imageSrc: '/static/images/avatars/male-03.jpg',
     grade: '12 B',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -366,7 +366,7 @@ export const companyStudentsSummaryData = [
   },
   {
     id: 6,
-    imageSrc: '/assets/images/avatars/female-03.jpg',
+    imageSrc: '/static/images/avatars/female-03.jpg',
     grade: '9 A',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -439,7 +439,7 @@ export const companyStudentsSummaryData = [
   },
   {
     id: 7,
-    imageSrc: '/assets/images/avatars/male-04.jpg',
+    imageSrc: '/static/images/avatars/male-04.jpg',
     grade: '10 B',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -512,7 +512,7 @@ export const companyStudentsSummaryData = [
   },
   {
     id: 8,
-    imageSrc: '/assets/images/avatars/female-04.jpg',
+    imageSrc: '/static/images/avatars/female-04.jpg',
     grade: '12 C',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -585,7 +585,7 @@ export const companyStudentsSummaryData = [
   },
   {
     id: 9,
-    imageSrc: '/assets/images/avatars/male-05.jpg',
+    imageSrc: '/static/images/avatars/male-05.jpg',
     grade: '11 A',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -658,7 +658,7 @@ export const companyStudentsSummaryData = [
   },
   {
     id: 10,
-    imageSrc: '/assets/images/avatars/female-05.jpg',
+    imageSrc: '/static/images/avatars/female-05.jpg',
     grade: '11 B',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -731,7 +731,7 @@ export const companyStudentsSummaryData = [
   },
   {
     id: 11,
-    imageSrc: '/assets/images/avatars/female-06.jpg',
+    imageSrc: '/static/images/avatars/female-06.jpg',
     grade: '9 C',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -804,7 +804,7 @@ export const companyStudentsSummaryData = [
   },
   {
     id: 12,
-    imageSrc: '/assets/images/avatars/male-06.jpg',
+    imageSrc: '/static/images/avatars/male-06.jpg',
     grade: '10 C',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -877,7 +877,7 @@ export const companyStudentsSummaryData = [
   },
   {
     id: 13,
-    imageSrc: '/assets/images/avatars/female-07.jpg',
+    imageSrc: '/static/images/avatars/female-07.jpg',
     grade: '12 A',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -950,7 +950,7 @@ export const companyStudentsSummaryData = [
   },
   {
     id: 14,
-    imageSrc: '/assets/images/avatars/male-07.jpg',
+    imageSrc: '/static/images/avatars/male-07.jpg',
     grade: '11 A',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -1023,7 +1023,7 @@ export const companyStudentsSummaryData = [
   },
   {
     id: 15,
-    imageSrc: '/assets/images/avatars/female-08.jpg',
+    imageSrc: '/static/images/avatars/female-08.jpg',
     grade: '11 A',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -1099,7 +1099,7 @@ export const companyStudentsSummaryData = [
 export const schoolStudentsSummaryData = [
   {
     id: 1,
-    imageSrc: '/assets/images/avatars/male-01.jpg',
+    imageSrc: '/static/images/avatars/male-01.jpg',
     grade: '11 C',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -1172,7 +1172,7 @@ export const schoolStudentsSummaryData = [
   },
   {
     id: 2,
-    imageSrc: '/assets/images/avatars/female-01.jpg',
+    imageSrc: '/static/images/avatars/female-01.jpg',
     grade: '10 A',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -1245,7 +1245,7 @@ export const schoolStudentsSummaryData = [
   },
   {
     id: 3,
-    imageSrc: '/assets/images/avatars/male-02.jpg',
+    imageSrc: '/static/images/avatars/male-02.jpg',
     grade: '9 B',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -1318,7 +1318,7 @@ export const schoolStudentsSummaryData = [
   },
   {
     id: 4,
-    imageSrc: '/assets/images/avatars/female-02.jpg',
+    imageSrc: '/static/images/avatars/female-02.jpg',
     grade: '10 A',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -1391,7 +1391,7 @@ export const schoolStudentsSummaryData = [
   },
   {
     id: 5,
-    imageSrc: '/assets/images/avatars/male-03.jpg',
+    imageSrc: '/static/images/avatars/male-03.jpg',
     grade: '12 B',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -1464,7 +1464,7 @@ export const schoolStudentsSummaryData = [
   },
   {
     id: 6,
-    imageSrc: '/assets/images/avatars/female-03.jpg',
+    imageSrc: '/static/images/avatars/female-03.jpg',
     grade: '9 A',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -1537,7 +1537,7 @@ export const schoolStudentsSummaryData = [
   },
   {
     id: 7,
-    imageSrc: '/assets/images/avatars/male-04.jpg',
+    imageSrc: '/static/images/avatars/male-04.jpg',
     grade: '10 B',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -1610,7 +1610,7 @@ export const schoolStudentsSummaryData = [
   },
   {
     id: 8,
-    imageSrc: '/assets/images/avatars/female-04.jpg',
+    imageSrc: '/static/images/avatars/female-04.jpg',
     grade: '12 C',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -1683,7 +1683,7 @@ export const schoolStudentsSummaryData = [
   },
   {
     id: 9,
-    imageSrc: '/assets/images/avatars/male-05.jpg',
+    imageSrc: '/static/images/avatars/male-05.jpg',
     grade: '11 A',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -1756,7 +1756,7 @@ export const schoolStudentsSummaryData = [
   },
   {
     id: 10,
-    imageSrc: '/assets/images/avatars/female-05.jpg',
+    imageSrc: '/static/images/avatars/female-05.jpg',
     grade: '11 B',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -1829,7 +1829,7 @@ export const schoolStudentsSummaryData = [
   },
   {
     id: 11,
-    imageSrc: '/assets/images/avatars/female-06.jpg',
+    imageSrc: '/static/images/avatars/female-06.jpg',
     grade: '9 C',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -1902,7 +1902,7 @@ export const schoolStudentsSummaryData = [
   },
   {
     id: 12,
-    imageSrc: '/assets/images/avatars/male-06.jpg',
+    imageSrc: '/static/images/avatars/male-06.jpg',
     grade: '10 C',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -1975,7 +1975,7 @@ export const schoolStudentsSummaryData = [
   },
   {
     id: 13,
-    imageSrc: '/assets/images/avatars/female-07.jpg',
+    imageSrc: '/static/images/avatars/female-07.jpg',
     grade: '12 A',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -2048,7 +2048,7 @@ export const schoolStudentsSummaryData = [
   },
   {
     id: 14,
-    imageSrc: '/assets/images/avatars/male-07.jpg',
+    imageSrc: '/static/images/avatars/male-07.jpg',
     grade: '11 A',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -2121,7 +2121,7 @@ export const schoolStudentsSummaryData = [
   },
   {
     id: 15,
-    imageSrc: '/assets/images/avatars/female-08.jpg',
+    imageSrc: '/static/images/avatars/female-08.jpg',
     grade: '11 A',
     averageIndicatorsData: {
       'ave-cefr': {

@@ -3,7 +3,7 @@
     <q-header elevated>
       <q-toolbar class="q-px-xl">
         <q-avatar>
-          <img src="/assets/images/logos/uni_logo.jpeg" />
+          <img src="/static/images/logos/uni_logo.jpeg" />
         </q-avatar>
         <!-- <q-btn
           flat
