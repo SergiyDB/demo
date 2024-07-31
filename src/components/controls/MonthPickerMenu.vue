@@ -14,7 +14,7 @@
           class="self-center q-pa-sm full-width no-outline text-weight-bold"
           tabindex="0"
         >
-          Selected months: {{ UIdataModel.length }}
+          Selected months: {{ uiDataModel.length }}
         </div>
 
         <q-tooltip anchor="center right" self="center left" :offset="[10, 10]">
@@ -91,14 +91,14 @@ const isFetching = computed(() => props.isFetching);
 const currentDate = props.currentDate;
 const currentYear = currentDate.getFullYear();
 
-const UIdataModel = ref([...localModel.value]);
+const uiDataModel = ref([...localModel.value]);
 
 watch(localModel, (newValue) => {
-  UIdataModel.value = [...newValue];
+  uiDataModel.value = [...newValue];
 });
 
 const updateModelValue = () => {
-  localModel.value = [...UIdataModel.value];
+  localModel.value = [...uiDataModel.value];
 };
 
 function getMonthsArray(locale) {
@@ -116,13 +116,13 @@ const monthsList = computed(() => getMonthsArray(props.localeStr));
 
 const selectMonth = (val) => {
   if (isMonthSelected(val)) {
-    UIdataModel.value = UIdataModel.value.filter(month => month !== val);
+    uiDataModel.value = uiDataModel.value.filter(month => month !== val);
   } else {
-    UIdataModel.value.push(val);
+    uiDataModel.value.push(val);
   }
 };
 
-const isMonthSelected = (val) => UIdataModel.value.includes(val);
+const isMonthSelected = (val) => uiDataModel.value.includes(val);
 
 const isMonthDisabled = (val) => val > currentDate.getMonth();
 
@@ -131,7 +131,7 @@ const onResize = function (size) {
 };
 
 const getSortedSelectedMonthLabels = () => {
-  return UIdataModel.value
+  return uiDataModel.value
     .sort((a, b) => a - b)
     .map(monthValue => monthsList.value.find(month => month.value === monthValue)?.label);
 };

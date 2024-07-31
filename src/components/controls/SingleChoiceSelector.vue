@@ -1,5 +1,5 @@
 <template>
-  <div class="single-choice-selector">
+  <div class="single-choice-selector non-selectable">
     <q-field
       class=      "cursor-pointer"
       color=      "white"
@@ -17,7 +17,7 @@
           {{ fieldLabel }} : {{ getLabelByValue(options, uiDataModel) }}
         </div>
         <q-menu
-          @hide=      "updateModelValue()"
+          @hide=      "() => updateModelValue()"
           fit
           anchor=     "bottom right"
           self=       "top right"
@@ -46,12 +46,14 @@
       </template>
     </q-field>
   </div>
+
 </template>
 
 <script setup>
 import {
   computed,
   ref,
+  watch,
 } from 'vue';
 
 const props = defineProps({
@@ -65,18 +67,22 @@ const emit = defineEmits(['update:modelValue']);
 
 const localModel = computed({
   get: () => props?.modelValue,
-  set: () => updateModelValue(),
+  set: value => emit('update:modelValue', value),
 });
 
 const uiDataModel =  ref(localModel.value);
 
+watch(localModel, (newValue) => {
+  uiDataModel.value = newValue;
+});
+
 const updateModelValue = () => {
-  emit('update:modelValue', uiDataModel.value);
+  localModel.value = uiDataModel.value;
 };
 
-const options = computed(() => props.options);
+const options = props.options;
 const isDisabled = computed(() => props.isFetching);
-const fieldLabel = computed(() => props.fieldLabel)
+const fieldLabel = props.fieldLabel
 
 function getLabelByValue(objArray, value) {
   const matchedObj = objArray.find(obj => obj.value === value);
