@@ -1,52 +1,79 @@
 <template>
   <q-page>
     <div class="q-pa-md">
-
       <div class="row full-width q-py-lg">
+
         <q-avatar size="100px" class="q-mr-md">
           <template v-if="user.imageUrl">
-            <img :src="user.imageUrl" alt="">
+            <img :src="user.imageUrl" alt="" />
           </template>
           <template v-else>
-            <q-icon color="primary" name="account_circle" size="100px"/>
+            <q-icon color="primary" name="account_circle" size="100px" />
           </template>
         </q-avatar>
+
         <div>
-          <div class="text-h4 text-weight-bold">Welcome back, {{ user.full_name }}!</div>
-          <div style="cursor: pointer;" class="text-body2"><q-icon name="notifications"/>You have 12 new messages</div>
-        </div>
-        <q-space />
-        <div class="q-pa-sm q-gutter-sm">
-          <q-btn padding="'10px 5px'" flat rounded icon="settings">Settings</q-btn>
-          <q-btn padding="'10px 5px'" flat rounded icon="logout" @click="logout()">Logout</q-btn>
+          <div class="text-h4 text-weight-bold">
+            Welcome back, {{ user.full_name }}!
+          </div>
+          <div style="cursor: pointer" class="text-body2">
+            <q-icon name="notifications" />You have 12 new messages
+          </div>
         </div>
 
+        <q-space />
+
+        <div class="q-pa-sm q-gutter-sm">
+
+          <q-btn
+            padding="'10px 5px'"
+            flat
+            rounded
+            icon="settings"
+          >
+            Settings
+          </q-btn>
+
+          <q-btn
+            padding="'10px 5px'"
+            flat
+            rounded
+            icon="logout"
+            @click="logout()"
+          >
+            Logout
+          </q-btn>
+
+        </div>
       </div>
 
       <div>
         <q-tabs
           stretch
           dense
-          class="text-gray"
-          active-color="primary"
+          active-color="white"
+          active-bg-color="primary"
           indicator-color="primary"
           align="left"
           narrow-indicator
         >
-          <q-route-tab :to="'/school/overview'"
+          <q-route-tab
+            :to="'/school/overview'"
             exact
             replace
             name="overview"
             label="Overview"
             v-if="user.user_role === 'admin'"
           />
-          <q-route-tab :to="'/school/grade'"
+          <q-route-tab
+            :to="'/school/grade'"
             exact
             replace
             name="grade"
             label="Grade"
           />
-          <q-route-tab :to="'/school/team'"
+          <q-route-tab
+            :to="'/school/team'"
             exact
             replace
             name="team"
@@ -55,39 +82,40 @@
         </q-tabs>
       </div>
 
-      <router-view />
+      <q-separator spaced/>
 
+      <router-view />
     </div>
   </q-page>
 </template>
 
 <script setup lang="ts">
+import { useRouter } from 'vue-router';
 import {
   getState,
   logoutUser
-} from 'src/app_state/appState';
-import { useRouter } from 'vue-router';
-const state = getState();
-const {
-  // isUserLoggedIn,
-  user
-} = state;
+} from 'src/store/appState';
+
+import {
+  initFormState,
+} from 'src/store/formState';
 
 defineOptions({
-  name: 'SchoolPage'
+  name: 'SchoolPage',
 });
 
 const router = useRouter();
+const state = getState();
+const {
+  user,
+} = state;
 
 const logout = () => {
   logoutUser();
   router.push({ path: '/auth' });
-}
+};
 
-
-
+initFormState();
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

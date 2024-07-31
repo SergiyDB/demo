@@ -6,7 +6,7 @@
         <q-space />
         <div class="">
           <q-btn-toggle
-            v-model="model"
+            v-model="localModel"
             class="my-custom-toggle"
             no-caps
             rounded
@@ -47,22 +47,38 @@
   </q-card>
 </template>
 
-<script setup lang="ts">
-import { ref, computed } from 'vue';
+<script setup >
+import {
+  // ref,
+  computed
+} from 'vue';
 
-interface FollowUpItem {
-  name:         string;
-  description:  string;
-};
+// interface FollowUpItem {
+//   name:         string;
+//   description:  string;
+// };
 
-const props = defineProps<{
-  data: Record<string, Array<FollowUpItem>>
-}>();
+// const props = defineProps<{
+//   data: Record<string, Array<FollowUpItem>>;
+//   modelValue: 'today' | 'week';
+// }>();
 
-const model = ref('today');
+const props = defineProps({
+  data: { type: Object },
+  modelValue: { type: String }
+})
+
+const emit = defineEmits(['update:modelValue'])
+
+let localModel = computed({
+  get: () => props.modelValue,
+  set: (value) => {
+      emit('update:modelValue', value)
+    },
+})
 
 const followUpData = computed(() => {
-  return model.value === 'today' ? props.data.today : props.data.week;
+  return localModel.value === 'today' ? props.data.today : props.data.week;
 });
 </script>
 

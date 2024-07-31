@@ -20,9 +20,7 @@
 </template>
 
 <script setup lang="ts">
-import TrendLineChart from './TrendLineChart.vue';
-
-
+import TrendLineChart from 'src/components/charts/TrendLineChart.vue';
 
 defineProps<{
   timescale: string,

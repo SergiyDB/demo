@@ -1,10 +1,11 @@
 <template>
   <q-card flat bordered class="person-card bordered self-stretch">
 
-    <q-card-section>
+    <q-card-section >
       <q-avatar size="120px">
         <img :src="imageSrc">
       </q-avatar>
+      <q-icon size="sm" class="float-right on-right" name="arrow_outward"/>
     </q-card-section>
 
     <q-card-section>

@@ -152,7 +152,7 @@ import {
 } from 'src/shared/validators';
 
 import PrivacyPolicy from 'src/components/terms_and_policies/PrivacyPolicy.vue';
-import UserTerms from 'srccomponents/terms_and_policies/UserTerms.vue';
+import UserTerms from 'src/components/terms_and_policies/UserTerms.vue';
 
 
 const $q = useQuasar();

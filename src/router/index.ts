@@ -7,74 +7,73 @@ import {
 } from 'vue-router';
 
 import routes from './routes';
+import { initializeState, getState } from 'src/store/appState';
 
-import { getState } from 'src/app_state/app_state';
+export default route(async function (/* { store, ssrContext } */) {
+  await initializeState();  // Ожидаем завершения инициализации состояния
 
-/*
- * If not building with SSR mode, you can
- * directly export the Router instantiation;
- *
- * The function below can be async too; either use
- * async/await or return a Promise which resolves
- * with the Router instance.
- */
-
-export default route(function (/* { store, ssrContext } */) {
   const createHistory = process.env.SERVER
     ? createMemoryHistory
-    : (process.env.VUE_ROUTER_MODE === 'history' ? createWebHistory : createWebHashHistory);
+    : process.env.VUE_ROUTER_MODE === 'history'
+    ? createWebHistory
+    : createWebHashHistory;
 
   const Router = createRouter({
     scrollBehavior: () => ({ left: 0, top: 0 }),
     routes,
-
-    // Leave this as is and make changes in quasar.conf.js instead!
-    // quasar.conf.js -> build -> vueRouterMode
-    // quasar.conf.js -> build -> publicPath
     history: createHistory(process.env.VUE_ROUTER_BASE),
   });
 
-
   Router.beforeEach((to, from, next) => {
-    const {
-      isUserLoggedIn,
-      user
-    } = getState();
+    const { isUserLoggedIn, user } = getState();
 
-    // Проверяем, аутентифицирован ли пользователь
-    if (
-      !isUserLoggedIn
-      && to.path !== '/auth'
-      && to.path !== '/auth/sign-in'
-      && to.path !== '/auth/reset-password'
-      && to.path !== '/auth/sign-up'
-      && to.path !== '/auth/sign-up/school'
-      && to.path !== '/auth/sign-up/company'
-      && to.path !== '/auth/sign-up/tutor'
-    ) {
+    console.log('isUserLoggedIn:', isUserLoggedIn);
+    console.log('Current path:', to.path);
+
+    if (!isUserLoggedIn && !to.path.startsWith('/auth')) {
       next({ path: '/auth/sign-in' });
-
-    } else if (
-      isUserLoggedIn
-      && (
-        to.path === '/auth'
-        || to.path === '/auth/sign-in'
-        || to.path === '/auth/reset-password'
-        || to.path === '/auth/sign-up'
-        || to.path === '/auth/sign-up/school'
-        || to.path === '/auth/sign-up/company'
-        || to.path === '/auth/sign-up/tutor'
-      )
-    ) {
+    } else if (isUserLoggedIn) {
       const userType = user?.user_type;
-      if (userType === 'school') {
-        next({ path: '/school' });
-      } else if (userType === 'company' || userType === 'tutor') {
-        next({ path: '/company' });
+      const userRole = user?.user_role;
+
+      if (to.path.startsWith('/auth')) {
+        if (userType === 'school') {
+          if (userRole === 'admin') {
+            next({ path: '/school/overview' });
+          } else {
+            next({ path: '/school/grade' });
+          }
+        } else if (userType === 'company') {
+          if (userRole === 'admin') {
+            console.log('this case')
+            next({ path: '/company/overview' });
+          } else {
+            next({ path: '/company/level' });
+          }
+        } else if (userType === 'tutor') {
+          next({ path: '/tutor/overview' });
+        }
+      } else if (to.path === '/') {
+        if (userType === 'school') {
+          if (userRole === 'admin') {
+            next({ path: '/school/overview' });
+          } else {
+            next({ path: '/school/grade' });
+          }
+        } else if (userType === 'company') {
+          if (userRole === 'admin') {
+            next({ path: '/company/overview' });
+          } else {
+            next({ path: '/company/level' });
+          }
+        } else if (userType === 'tutor') {
+          next({ path: '/tutor/overview' });
+        }
       } else {
-        next({ path: '/' });
+        next();
       }
     } else {
+      console.log('THIS CASE');
       next();
     }
   });

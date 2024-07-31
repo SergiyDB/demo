@@ -14,8 +14,8 @@
     use-input
     fill-input
     clearable
-    filled
     dense
+    outlined
   >
     <template v-slot:no-option>
       <q-item>

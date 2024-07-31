@@ -1,5 +1,5 @@
 <template>
-  <div class="row q-px-md">
+  <div class="row q-px-md non-selectable">
     <q-btn
       v-for=        "month in monthsList"
       :key=         "month.value"
@@ -19,7 +19,7 @@
 
 <script setup>
 import {
-  computed
+  computed,
 } from 'vue';
 
 const props = defineProps({
