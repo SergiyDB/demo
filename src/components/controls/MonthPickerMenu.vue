@@ -1,5 +1,5 @@
 <template>
-  <div class="date-selector">
+  <div class="date-selector non-selectable">
     <q-field
       class=    "cursor-pointer"
       filled
@@ -70,6 +70,7 @@
 import {
   ref,
   computed,
+  watch,
 } from 'vue';
 
 const props = defineProps({
@@ -82,8 +83,8 @@ const props = defineProps({
 const emit = defineEmits(['update:modelValue']);
 
 const localModel = computed({
-  get: () => props?.modelValue,
-  set: () => updateModelValue(),
+  get: () => props.modelValue,
+  set: value => emit('update:modelValue', value),
 });
 
 const isFetching = computed(() => props.isFetching);
@@ -92,8 +93,12 @@ const currentYear = currentDate.getFullYear();
 
 const UIdataModel = ref([...localModel.value]);
 
+watch(localModel, (newValue) => {
+  UIdataModel.value = [...newValue];
+});
+
 const updateModelValue = () => {
-  emit('update:modelValue', UIdataModel.value);
+  localModel.value = [...UIdataModel.value];
 };
 
 function getMonthsArray(locale) {
@@ -130,6 +135,7 @@ const getSortedSelectedMonthLabels = () => {
     .sort((a, b) => a - b)
     .map(monthValue => monthsList.value.find(month => month.value === monthValue)?.label);
 };
+
 </script>
 
 <style lang="scss">
