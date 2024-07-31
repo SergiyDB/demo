@@ -51,7 +51,7 @@ export const companyStudentsSummaryData = [
       },
       monthly: {
         labels: [
-          'Jan'/assets/images
+          'Jan',
           'Feb',
           'Mar',
           'Apr',
