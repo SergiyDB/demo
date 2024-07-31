@@ -3,7 +3,11 @@
     class="column q-pa-md q-gutter-y-md"
     style="width: 500px; max-width: 800px"
   >
-    <img style="object-fit:contain; height: 100px" src="src/assets/images/logos/uni_logo.jpeg" alt="">
+    <img
+      style="object-fit: contain; height: 100px"
+      src="/assets/images/logos/uni_logo.jpeg"
+      alt=""
+    />
 
     <div class="text-h3 text-weight-bold">Sign In</div>
     <div class="text-body1">

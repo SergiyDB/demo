@@ -1,7 +1,7 @@
 export const companyStudentsSummaryData = [
   {
     id: 1,
-    imageSrc: 'src/assets/images/avatars/male-01.jpg',
+    imageSrc: '/assets/images/avatars/male-01.jpg',
     grade: '11 C',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -35,15 +35,38 @@ export const companyStudentsSummaryData = [
       },
     },
     progressTrendLineData: {
-      'weekly': {
-        labels: ['May 1-7', 'May 8-14', 'May 15-21', 'May 22-28', 'May 29-Jun 4', 'Jun 5-11', 'Jun 12-18', 'Jun 19-25', 'Jun 26-Jul 2'],
+      weekly: {
+        labels: [
+          'May 1-7',
+          'May 8-14',
+          'May 15-21',
+          'May 22-28',
+          'May 29-Jun 4',
+          'Jun 5-11',
+          'Jun 12-18',
+          'Jun 19-25',
+          'Jun 26-Jul 2',
+        ],
         data: [23, 28, 33, 26, 21, 27, 30, 32, 35],
       },
-      'monthly': {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      monthly: {
+        labels: [
+          'Jan'/assets/images
+          'Feb',
+          'Mar',
+          'Apr',
+          'May',
+          'Jun',
+          'Jul',
+          'Aug',
+          'Sep',
+          'Oct',
+          'Nov',
+          'Dec',
+        ],
         data: [68, 63, 85, 89, 73, 71, 59, 42, 77, 92, 29, 79],
       },
-      'quarterly': {
+      quarterly: {
         labels: ['Q1 Jan-Mar', 'Q2 Apr-Jun', 'Q3 Jul-Sep', 'Q4 Oct-Dec'],
         data: [216, 233, 207, 239],
       },
@@ -51,7 +74,7 @@ export const companyStudentsSummaryData = [
   },
   {
     id: 2,
-    imageSrc: 'src/assets/images/avatars/female-01.jpg',
+    imageSrc: '/assets/images/avatars/female-01.jpg',
     grade: '10 A',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -85,15 +108,38 @@ export const companyStudentsSummaryData = [
       },
     },
     progressTrendLineData: {
-      'weekly': {
-        labels: ['May 1-7', 'May 8-14', 'May 15-21', 'May 22-28', 'May 29-Jun 4', 'Jun 5-11', 'Jun 12-18', 'Jun 19-25', 'Jun 26-Jul 2'],
+      weekly: {
+        labels: [
+          'May 1-7',
+          'May 8-14',
+          'May 15-21',
+          'May 22-28',
+          'May 29-Jun 4',
+          'Jun 5-11',
+          'Jun 12-18',
+          'Jun 19-25',
+          'Jun 26-Jul 2',
+        ],
         data: [25, 30, 35, 28, 24, 29, 32, 34, 37],
       },
-      'monthly': {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      monthly: {
+        labels: [
+          'Jan',
+          'Feb',
+          'Mar',
+          'Apr',
+          'May',
+          'Jun',
+          'Jul',
+          'Aug',
+          'Sep',
+          'Oct',
+          'Nov',
+          'Dec',
+        ],
         data: [72, 67, 89, 93, 77, 75, 63, 46, 81, 96, 33, 83],
       },
-      'quarterly': {
+      quarterly: {
         labels: ['Q1 Jan-Mar', 'Q2 Apr-Jun', 'Q3 Jul-Sep', 'Q4 Oct-Dec'],
         data: [230, 247, 221, 253],
       },
@@ -101,7 +147,7 @@ export const companyStudentsSummaryData = [
   },
   {
     id: 3,
-    imageSrc: 'src/assets/images/avatars/male-02.jpg',
+    imageSrc: '/assets/images/avatars/male-02.jpg',
     grade: '9 B',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -135,15 +181,38 @@ export const companyStudentsSummaryData = [
       },
     },
     progressTrendLineData: {
-      'weekly': {
-        labels: ['May 1-7', 'May 8-14', 'May 15-21', 'May 22-28', 'May 29-Jun 4', 'Jun 5-11', 'Jun 12-18', 'Jun 19-25', 'Jun 26-Jul 2'],
+      weekly: {
+        labels: [
+          'May 1-7',
+          'May 8-14',
+          'May 15-21',
+          'May 22-28',
+          'May 29-Jun 4',
+          'Jun 5-11',
+          'Jun 12-18',
+          'Jun 19-25',
+          'Jun 26-Jul 2',
+        ],
         data: [20, 25, 30, 23, 19, 24, 27, 29, 32],
       },
-      'monthly': {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      monthly: {
+        labels: [
+          'Jan',
+          'Feb',
+          'Mar',
+          'Apr',
+          'May',
+          'Jun',
+          'Jul',
+          'Aug',
+          'Sep',
+          'Oct',
+          'Nov',
+          'Dec',
+        ],
         data: [65, 59, 80, 81, 56, 55, 40, 22, 67, 85, 17, 71],
       },
-      'quarterly': {
+      quarterly: {
         labels: ['Q1 Jan-Mar', 'Q2 Apr-Jun', 'Q3 Jul-Sep', 'Q4 Oct-Dec'],
         data: [204, 213, 198, 219],
       },
@@ -151,7 +220,7 @@ export const companyStudentsSummaryData = [
   },
   {
     id: 4,
-    imageSrc: 'src/assets/images/avatars/female-02.jpg',
+    imageSrc: '/assets/images/avatars/female-02.jpg',
     grade: '10 A',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -185,15 +254,38 @@ export const companyStudentsSummaryData = [
       },
     },
     progressTrendLineData: {
-      'weekly': {
-        labels: ['May 1-7', 'May 8-14', 'May 15-21', 'May 22-28', 'May 29-Jun 4', 'Jun 5-11', 'Jun 12-18', 'Jun 19-25', 'Jun 26-Jul 2'],
+      weekly: {
+        labels: [
+          'May 1-7',
+          'May 8-14',
+          'May 15-21',
+          'May 22-28',
+          'May 29-Jun 4',
+          'Jun 5-11',
+          'Jun 12-18',
+          'Jun 19-25',
+          'Jun 26-Jul 2',
+        ],
         data: [18, 23, 28, 21, 17, 22, 25, 27, 30],
       },
-      'monthly': {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      monthly: {
+        labels: [
+          'Jan',
+          'Feb',
+          'Mar',
+          'Apr',
+          'May',
+          'Jun',
+          'Jul',
+          'Aug',
+          'Sep',
+          'Oct',
+          'Nov',
+          'Dec',
+        ],
         data: [56, 50, 71, 75, 49, 47, 32, 14, 59, 77, 9, 53],
       },
-      'quarterly': {
+      quarterly: {
         labels: ['Q1 Jan-Mar', 'Q2 Apr-Jun', 'Q3 Jul-Sep', 'Q4 Oct-Dec'],
         data: [173, 182, 167, 189],
       },
@@ -201,7 +293,7 @@ export const companyStudentsSummaryData = [
   },
   {
     id: 5,
-    imageSrc: 'src/assets/images/avatars/male-03.jpg',
+    imageSrc: '/assets/images/avatars/male-03.jpg',
     grade: '12 B',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -235,15 +327,38 @@ export const companyStudentsSummaryData = [
       },
     },
     progressTrendLineData: {
-      'weekly': {
-        labels: ['May 1-7', 'May 8-14', 'May 15-21', 'May 22-28', 'May 29-Jun 4', 'Jun 5-11', 'Jun 12-18', 'Jun 19-25', 'Jun 26-Jul 2'],
+      weekly: {
+        labels: [
+          'May 1-7',
+          'May 8-14',
+          'May 15-21',
+          'May 22-28',
+          'May 29-Jun 4',
+          'Jun 5-11',
+          'Jun 12-18',
+          'Jun 19-25',
+          'Jun 26-Jul 2',
+        ],
         data: [30, 35, 40, 33, 29, 34, 37, 39, 42],
       },
-      'monthly': {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      monthly: {
+        labels: [
+          'Jan',
+          'Feb',
+          'Mar',
+          'Apr',
+          'May',
+          'Jun',
+          'Jul',
+          'Aug',
+          'Sep',
+          'Oct',
+          'Nov',
+          'Dec',
+        ],
         data: [87, 81, 102, 103, 78, 76, 61, 43, 88, 106, 39, 93],
       },
-      'quarterly': {
+      quarterly: {
         labels: ['Q1 Jan-Mar', 'Q2 Apr-Jun', 'Q3 Jul-Sep', 'Q4 Oct-Dec'],
         data: [270, 287, 261, 293],
       },
@@ -251,7 +366,7 @@ export const companyStudentsSummaryData = [
   },
   {
     id: 6,
-    imageSrc: 'src/assets/images/avatars/female-03.jpg',
+    imageSrc: '/assets/images/avatars/female-03.jpg',
     grade: '9 A',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -285,15 +400,38 @@ export const companyStudentsSummaryData = [
       },
     },
     progressTrendLineData: {
-      'weekly': {
-        labels: ['May 1-7', 'May 8-14', 'May 15-21', 'May 22-28', 'May 29-Jun 4', 'Jun 5-11', 'Jun 12-18', 'Jun 19-25', 'Jun 26-Jul 2'],
+      weekly: {
+        labels: [
+          'May 1-7',
+          'May 8-14',
+          'May 15-21',
+          'May 22-28',
+          'May 29-Jun 4',
+          'Jun 5-11',
+          'Jun 12-18',
+          'Jun 19-25',
+          'Jun 26-Jul 2',
+        ],
         data: [15, 20, 25, 18, 14, 19, 22, 24, 27],
       },
-      'monthly': {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      monthly: {
+        labels: [
+          'Jan',
+          'Feb',
+          'Mar',
+          'Apr',
+          'May',
+          'Jun',
+          'Jul',
+          'Aug',
+          'Sep',
+          'Oct',
+          'Nov',
+          'Dec',
+        ],
         data: [42, 36, 57, 58, 33, 31, 16, 8, 53, 71, 3, 47],
       },
-      'quarterly': {
+      quarterly: {
         labels: ['Q1 Jan-Mar', 'Q2 Apr-Jun', 'Q3 Jul-Sep', 'Q4 Oct-Dec'],
         data: [126, 135, 120, 142],
       },
@@ -301,7 +439,7 @@ export const companyStudentsSummaryData = [
   },
   {
     id: 7,
-    imageSrc: 'src/assets/images/avatars/male-04.jpg',
+    imageSrc: '/assets/images/avatars/male-04.jpg',
     grade: '10 B',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -335,15 +473,38 @@ export const companyStudentsSummaryData = [
       },
     },
     progressTrendLineData: {
-      'weekly': {
-        labels: ['May 1-7', 'May 8-14', 'May 15-21', 'May 22-28', 'May 29-Jun 4', 'Jun 5-11', 'Jun 12-18', 'Jun 19-25', 'Jun 26-Jul 2'],
+      weekly: {
+        labels: [
+          'May 1-7',
+          'May 8-14',
+          'May 15-21',
+          'May 22-28',
+          'May 29-Jun 4',
+          'Jun 5-11',
+          'Jun 12-18',
+          'Jun 19-25',
+          'Jun 26-Jul 2',
+        ],
         data: [19, 24, 29, 22, 18, 23, 26, 28, 31],
       },
-      'monthly': {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      monthly: {
+        labels: [
+          'Jan',
+          'Feb',
+          'Mar',
+          'Apr',
+          'May',
+          'Jun',
+          'Jul',
+          'Aug',
+          'Sep',
+          'Oct',
+          'Nov',
+          'Dec',
+        ],
         data: [58, 52, 73, 74, 49, 47, 32, 14, 59, 77, 9, 53],
       },
-      'quarterly': {
+      quarterly: {
         labels: ['Q1 Jan-Mar', 'Q2 Apr-Jun', 'Q3 Jul-Sep', 'Q4 Oct-Dec'],
         data: [173, 182, 167, 189],
       },
@@ -351,7 +512,7 @@ export const companyStudentsSummaryData = [
   },
   {
     id: 8,
-    imageSrc: 'src/assets/images/avatars/female-04.jpg',
+    imageSrc: '/assets/images/avatars/female-04.jpg',
     grade: '12 C',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -385,15 +546,38 @@ export const companyStudentsSummaryData = [
       },
     },
     progressTrendLineData: {
-      'weekly': {
-        labels: ['May 1-7', 'May 8-14', 'May 15-21', 'May 22-28', 'May 29-Jun 4', 'Jun 5-11', 'Jun 12-18', 'Jun 19-25', 'Jun 26-Jul 2'],
+      weekly: {
+        labels: [
+          'May 1-7',
+          'May 8-14',
+          'May 15-21',
+          'May 22-28',
+          'May 29-Jun 4',
+          'Jun 5-11',
+          'Jun 12-18',
+          'Jun 19-25',
+          'Jun 26-Jul 2',
+        ],
         data: [32, 37, 42, 35, 31, 36, 39, 41, 44],
       },
-      'monthly': {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      monthly: {
+        labels: [
+          'Jan',
+          'Feb',
+          'Mar',
+          'Apr',
+          'May',
+          'Jun',
+          'Jul',
+          'Aug',
+          'Sep',
+          'Oct',
+          'Nov',
+          'Dec',
+        ],
         data: [97, 91, 112, 113, 88, 86, 71, 53, 98, 116, 49, 103],
       },
-      'quarterly': {
+      quarterly: {
         labels: ['Q1 Jan-Mar', 'Q2 Apr-Jun', 'Q3 Jul-Sep', 'Q4 Oct-Dec'],
         data: [300, 317, 291, 323],
       },
@@ -401,7 +585,7 @@ export const companyStudentsSummaryData = [
   },
   {
     id: 9,
-    imageSrc: 'src/assets/images/avatars/male-05.jpg',
+    imageSrc: '/assets/images/avatars/male-05.jpg',
     grade: '11 A',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -435,15 +619,38 @@ export const companyStudentsSummaryData = [
       },
     },
     progressTrendLineData: {
-      'weekly': {
-        labels: ['May 1-7', 'May 8-14', 'May 15-21', 'May 22-28', 'May 29-Jun 4', 'Jun 5-11', 'Jun 12-18', 'Jun 19-25', 'Jun 26-Jul 2'],
+      weekly: {
+        labels: [
+          'May 1-7',
+          'May 8-14',
+          'May 15-21',
+          'May 22-28',
+          'May 29-Jun 4',
+          'Jun 5-11',
+          'Jun 12-18',
+          'Jun 19-25',
+          'Jun 26-Jul 2',
+        ],
         data: [28, 33, 38, 31, 27, 32, 35, 37, 40],
       },
-      'monthly': {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      monthly: {
+        labels: [
+          'Jan',
+          'Feb',
+          'Mar',
+          'Apr',
+          'May',
+          'Jun',
+          'Jul',
+          'Aug',
+          'Sep',
+          'Oct',
+          'Nov',
+          'Dec',
+        ],
         data: [83, 77, 98, 99, 74, 72, 57, 39, 84, 102, 45, 89],
       },
-      'quarterly': {
+      quarterly: {
         labels: ['Q1 Jan-Mar', 'Q2 Apr-Jun', 'Q3 Jul-Sep', 'Q4 Oct-Dec'],
         data: [254, 271, 245, 277],
       },
@@ -451,7 +658,7 @@ export const companyStudentsSummaryData = [
   },
   {
     id: 10,
-    imageSrc: 'src/assets/images/avatars/female-05.jpg',
+    imageSrc: '/assets/images/avatars/female-05.jpg',
     grade: '11 B',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -485,15 +692,38 @@ export const companyStudentsSummaryData = [
       },
     },
     progressTrendLineData: {
-      'weekly': {
-        labels: ['May 1-7', 'May 8-14', 'May 15-21', 'May 22-28', 'May 29-Jun 4', 'Jun 5-11', 'Jun 12-18', 'Jun 19-25', 'Jun 26-Jul 2'],
+      weekly: {
+        labels: [
+          'May 1-7',
+          'May 8-14',
+          'May 15-21',
+          'May 22-28',
+          'May 29-Jun 4',
+          'Jun 5-11',
+          'Jun 12-18',
+          'Jun 19-25',
+          'Jun 26-Jul 2',
+        ],
         data: [26, 31, 36, 29, 25, 30, 33, 35, 38],
       },
-      'monthly': {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      monthly: {
+        labels: [
+          'Jan',
+          'Feb',
+          'Mar',
+          'Apr',
+          'May',
+          'Jun',
+          'Jul',
+          'Aug',
+          'Sep',
+          'Oct',
+          'Nov',
+          'Dec',
+        ],
         data: [77, 71, 92, 93, 68, 66, 51, 33, 78, 96, 29, 83],
       },
-      'quarterly': {
+      quarterly: {
         labels: ['Q1 Jan-Mar', 'Q2 Apr-Jun', 'Q3 Jul-Sep', 'Q4 Oct-Dec'],
         data: [236, 253, 227, 259],
       },
@@ -501,7 +731,7 @@ export const companyStudentsSummaryData = [
   },
   {
     id: 11,
-    imageSrc: 'src/assets/images/avatars/female-06.jpg',
+    imageSrc: '/assets/images/avatars/female-06.jpg',
     grade: '9 C',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -535,15 +765,38 @@ export const companyStudentsSummaryData = [
       },
     },
     progressTrendLineData: {
-      'weekly': {
-        labels: ['May 1-7', 'May 8-14', 'May 15-21', 'May 22-28', 'May 29-Jun 4', 'Jun 5-11', 'Jun 12-18', 'Jun 19-25', 'Jun 26-Jul 2'],
+      weekly: {
+        labels: [
+          'May 1-7',
+          'May 8-14',
+          'May 15-21',
+          'May 22-28',
+          'May 29-Jun 4',
+          'Jun 5-11',
+          'Jun 12-18',
+          'Jun 19-25',
+          'Jun 26-Jul 2',
+        ],
         data: [13, 18, 23, 16, 12, 17, 20, 22, 25],
       },
-      'monthly': {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      monthly: {
+        labels: [
+          'Jan',
+          'Feb',
+          'Mar',
+          'Apr',
+          'May',
+          'Jun',
+          'Jul',
+          'Aug',
+          'Sep',
+          'Oct',
+          'Nov',
+          'Dec',
+        ],
         data: [36, 30, 51, 52, 27, 25, 10, 2, 47, 65, 0, 33],
       },
-      'quarterly': {
+      quarterly: {
         labels: ['Q1 Jan-Mar', 'Q2 Apr-Jun', 'Q3 Jul-Sep', 'Q4 Oct-Dec'],
         data: [108, 117, 102, 124],
       },
@@ -551,7 +804,7 @@ export const companyStudentsSummaryData = [
   },
   {
     id: 12,
-    imageSrc: 'src/assets/images/avatars/male-06.jpg',
+    imageSrc: '/assets/images/avatars/male-06.jpg',
     grade: '10 C',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -585,15 +838,38 @@ export const companyStudentsSummaryData = [
       },
     },
     progressTrendLineData: {
-      'weekly': {
-        labels: ['May 1-7', 'May 8-14', 'May 15-21', 'May 22-28', 'May 29-Jun 4', 'Jun 5-11', 'Jun 12-18', 'Jun 19-25', 'Jun 26-Jul 2'],
+      weekly: {
+        labels: [
+          'May 1-7',
+          'May 8-14',
+          'May 15-21',
+          'May 22-28',
+          'May 29-Jun 4',
+          'Jun 5-11',
+          'Jun 12-18',
+          'Jun 19-25',
+          'Jun 26-Jul 2',
+        ],
         data: [25, 30, 35, 28, 24, 29, 32, 34, 37],
       },
-      'monthly': {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      monthly: {
+        labels: [
+          'Jan',
+          'Feb',
+          'Mar',
+          'Apr',
+          'May',
+          'Jun',
+          'Jul',
+          'Aug',
+          'Sep',
+          'Oct',
+          'Nov',
+          'Dec',
+        ],
         data: [72, 67, 89, 93, 77, 75, 63, 46, 81, 96, 33, 83],
       },
-      'quarterly': {
+      quarterly: {
         labels: ['Q1 Jan-Mar', 'Q2 Apr-Jun', 'Q3 Jul-Sep', 'Q4 Oct-Dec'],
         data: [218, 235, 209, 241],
       },
@@ -601,7 +877,7 @@ export const companyStudentsSummaryData = [
   },
   {
     id: 13,
-    imageSrc: 'src/assets/images/avatars/female-07.jpg',
+    imageSrc: '/assets/images/avatars/female-07.jpg',
     grade: '12 A',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -635,15 +911,38 @@ export const companyStudentsSummaryData = [
       },
     },
     progressTrendLineData: {
-      'weekly': {
-        labels: ['May 1-7', 'May 8-14', 'May 15-21', 'May 22-28', 'May 29-Jun 4', 'Jun 5-11', 'Jun 12-18', 'Jun 19-25', 'Jun 26-Jul 2'],
+      weekly: {
+        labels: [
+          'May 1-7',
+          'May 8-14',
+          'May 15-21',
+          'May 22-28',
+          'May 29-Jun 4',
+          'Jun 5-11',
+          'Jun 12-18',
+          'Jun 19-25',
+          'Jun 26-Jul 2',
+        ],
         data: [27, 32, 37, 30, 26, 31, 34, 36, 39],
       },
-      'monthly': {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      monthly: {
+        labels: [
+          'Jan',
+          'Feb',
+          'Mar',
+          'Apr',
+          'May',
+          'Jun',
+          'Jul',
+          'Aug',
+          'Sep',
+          'Oct',
+          'Nov',
+          'Dec',
+        ],
         data: [82, 76, 97, 98, 73, 71, 56, 38, 83, 101, 44, 88],
       },
-      'quarterly': {
+      quarterly: {
         labels: ['Q1 Jan-Mar', 'Q2 Apr-Jun', 'Q3 Jul-Sep', 'Q4 Oct-Dec'],
         data: [249, 266, 240, 272],
       },
@@ -651,7 +950,7 @@ export const companyStudentsSummaryData = [
   },
   {
     id: 14,
-    imageSrc: 'src/assets/images/avatars/male-07.jpg',
+    imageSrc: '/assets/images/avatars/male-07.jpg',
     grade: '11 A',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -685,15 +984,38 @@ export const companyStudentsSummaryData = [
       },
     },
     progressTrendLineData: {
-      'weekly': {
-        labels: ['May 1-7', 'May 8-14', 'May 15-21', 'May 22-28', 'May 29-Jun 4', 'Jun 5-11', 'Jun 12-18', 'Jun 19-25', 'Jun 26-Jul 2'],
+      weekly: {
+        labels: [
+          'May 1-7',
+          'May 8-14',
+          'May 15-21',
+          'May 22-28',
+          'May 29-Jun 4',
+          'Jun 5-11',
+          'Jun 12-18',
+          'Jun 19-25',
+          'Jun 26-Jul 2',
+        ],
         data: [27, 32, 37, 30, 26, 31, 34, 36, 39],
       },
-      'monthly': {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      monthly: {
+        labels: [
+          'Jan',
+          'Feb',
+          'Mar',
+          'Apr',
+          'May',
+          'Jun',
+          'Jul',
+          'Aug',
+          'Sep',
+          'Oct',
+          'Nov',
+          'Dec',
+        ],
         data: [82, 76, 97, 98, 73, 71, 56, 38, 83, 101, 44, 88],
       },
-      'quarterly': {
+      quarterly: {
         labels: ['Q1 Jan-Mar', 'Q2 Apr-Jun', 'Q3 Jul-Sep', 'Q4 Oct-Dec'],
         data: [249, 266, 240, 272],
       },
@@ -701,7 +1023,7 @@ export const companyStudentsSummaryData = [
   },
   {
     id: 15,
-    imageSrc: 'src/assets/images/avatars/female-08.jpg',
+    imageSrc: '/assets/images/avatars/female-08.jpg',
     grade: '11 A',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -735,28 +1057,49 @@ export const companyStudentsSummaryData = [
       },
     },
     progressTrendLineData: {
-      'weekly': {
-        labels: ['May 1-7', 'May 8-14', 'May 15-21', 'May 22-28', 'May 29-Jun 4', 'Jun 5-11', 'Jun 12-18', 'Jun 19-25', 'Jun 26-Jul 2'],
+      weekly: {
+        labels: [
+          'May 1-7',
+          'May 8-14',
+          'May 15-21',
+          'May 22-28',
+          'May 29-Jun 4',
+          'Jun 5-11',
+          'Jun 12-18',
+          'Jun 19-25',
+          'Jun 26-Jul 2',
+        ],
         data: [27, 32, 37, 30, 26, 31, 34, 36, 39],
       },
-      'monthly': {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      monthly: {
+        labels: [
+          'Jan',
+          'Feb',
+          'Mar',
+          'Apr',
+          'May',
+          'Jun',
+          'Jul',
+          'Aug',
+          'Sep',
+          'Oct',
+          'Nov',
+          'Dec',
+        ],
         data: [82, 76, 97, 98, 73, 71, 56, 38, 83, 101, 44, 88],
       },
-      'quarterly': {
+      quarterly: {
         labels: ['Q1 Jan-Mar', 'Q2 Apr-Jun', 'Q3 Jul-Sep', 'Q4 Oct-Dec'],
         data: [249, 266, 240, 272],
       },
     },
-  }
-
+  },
 ];
-
 
 export const schoolStudentsSummaryData = [
   {
     id: 1,
-    imageSrc: 'src/assets/images/avatars/male-01.jpg',
+    imageSrc: '/assets/images/avatars/male-01.jpg',
     grade: '11 C',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -790,15 +1133,38 @@ export const schoolStudentsSummaryData = [
       },
     },
     progressTrendLineData: {
-      'weekly': {
-        labels: ['May 1-7', 'May 8-14', 'May 15-21', 'May 22-28', 'May 29-Jun 4', 'Jun 5-11', 'Jun 12-18', 'Jun 19-25', 'Jun 26-Jul 2'],
+      weekly: {
+        labels: [
+          'May 1-7',
+          'May 8-14',
+          'May 15-21',
+          'May 22-28',
+          'May 29-Jun 4',
+          'Jun 5-11',
+          'Jun 12-18',
+          'Jun 19-25',
+          'Jun 26-Jul 2',
+        ],
         data: [23, 28, 33, 26, 21, 27, 30, 32, 35],
       },
-      'monthly': {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      monthly: {
+        labels: [
+          'Jan',
+          'Feb',
+          'Mar',
+          'Apr',
+          'May',
+          'Jun',
+          'Jul',
+          'Aug',
+          'Sep',
+          'Oct',
+          'Nov',
+          'Dec',
+        ],
         data: [68, 63, 85, 89, 73, 71, 59, 42, 77, 92, 29, 79],
       },
-      'quarterly': {
+      quarterly: {
         labels: ['Q1 Jan-Mar', 'Q2 Apr-Jun', 'Q3 Jul-Sep', 'Q4 Oct-Dec'],
         data: [216, 233, 207, 239],
       },
@@ -806,7 +1172,7 @@ export const schoolStudentsSummaryData = [
   },
   {
     id: 2,
-    imageSrc: 'src/assets/images/avatars/female-01.jpg',
+    imageSrc: '/assets/images/avatars/female-01.jpg',
     grade: '10 A',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -840,15 +1206,38 @@ export const schoolStudentsSummaryData = [
       },
     },
     progressTrendLineData: {
-      'weekly': {
-        labels: ['May 1-7', 'May 8-14', 'May 15-21', 'May 22-28', 'May 29-Jun 4', 'Jun 5-11', 'Jun 12-18', 'Jun 19-25', 'Jun 26-Jul 2'],
+      weekly: {
+        labels: [
+          'May 1-7',
+          'May 8-14',
+          'May 15-21',
+          'May 22-28',
+          'May 29-Jun 4',
+          'Jun 5-11',
+          'Jun 12-18',
+          'Jun 19-25',
+          'Jun 26-Jul 2',
+        ],
         data: [25, 30, 35, 28, 24, 29, 32, 34, 37],
       },
-      'monthly': {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      monthly: {
+        labels: [
+          'Jan',
+          'Feb',
+          'Mar',
+          'Apr',
+          'May',
+          'Jun',
+          'Jul',
+          'Aug',
+          'Sep',
+          'Oct',
+          'Nov',
+          'Dec',
+        ],
         data: [72, 67, 89, 93, 77, 75, 63, 46, 81, 96, 33, 83],
       },
-      'quarterly': {
+      quarterly: {
         labels: ['Q1 Jan-Mar', 'Q2 Apr-Jun', 'Q3 Jul-Sep', 'Q4 Oct-Dec'],
         data: [230, 247, 221, 253],
       },
@@ -856,7 +1245,7 @@ export const schoolStudentsSummaryData = [
   },
   {
     id: 3,
-    imageSrc: 'src/assets/images/avatars/male-02.jpg',
+    imageSrc: '/assets/images/avatars/male-02.jpg',
     grade: '9 B',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -890,15 +1279,38 @@ export const schoolStudentsSummaryData = [
       },
     },
     progressTrendLineData: {
-      'weekly': {
-        labels: ['May 1-7', 'May 8-14', 'May 15-21', 'May 22-28', 'May 29-Jun 4', 'Jun 5-11', 'Jun 12-18', 'Jun 19-25', 'Jun 26-Jul 2'],
+      weekly: {
+        labels: [
+          'May 1-7',
+          'May 8-14',
+          'May 15-21',
+          'May 22-28',
+          'May 29-Jun 4',
+          'Jun 5-11',
+          'Jun 12-18',
+          'Jun 19-25',
+          'Jun 26-Jul 2',
+        ],
         data: [20, 25, 30, 23, 19, 24, 27, 29, 32],
       },
-      'monthly': {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      monthly: {
+        labels: [
+          'Jan',
+          'Feb',
+          'Mar',
+          'Apr',
+          'May',
+          'Jun',
+          'Jul',
+          'Aug',
+          'Sep',
+          'Oct',
+          'Nov',
+          'Dec',
+        ],
         data: [65, 59, 80, 81, 56, 55, 40, 22, 67, 85, 17, 71],
       },
-      'quarterly': {
+      quarterly: {
         labels: ['Q1 Jan-Mar', 'Q2 Apr-Jun', 'Q3 Jul-Sep', 'Q4 Oct-Dec'],
         data: [204, 213, 198, 219],
       },
@@ -906,7 +1318,7 @@ export const schoolStudentsSummaryData = [
   },
   {
     id: 4,
-    imageSrc: 'src/assets/images/avatars/female-02.jpg',
+    imageSrc: '/assets/images/avatars/female-02.jpg',
     grade: '10 A',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -940,15 +1352,38 @@ export const schoolStudentsSummaryData = [
       },
     },
     progressTrendLineData: {
-      'weekly': {
-        labels: ['May 1-7', 'May 8-14', 'May 15-21', 'May 22-28', 'May 29-Jun 4', 'Jun 5-11', 'Jun 12-18', 'Jun 19-25', 'Jun 26-Jul 2'],
+      weekly: {
+        labels: [
+          'May 1-7',
+          'May 8-14',
+          'May 15-21',
+          'May 22-28',
+          'May 29-Jun 4',
+          'Jun 5-11',
+          'Jun 12-18',
+          'Jun 19-25',
+          'Jun 26-Jul 2',
+        ],
         data: [18, 23, 28, 21, 17, 22, 25, 27, 30],
       },
-      'monthly': {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      monthly: {
+        labels: [
+          'Jan',
+          'Feb',
+          'Mar',
+          'Apr',
+          'May',
+          'Jun',
+          'Jul',
+          'Aug',
+          'Sep',
+          'Oct',
+          'Nov',
+          'Dec',
+        ],
         data: [56, 50, 71, 75, 49, 47, 32, 14, 59, 77, 9, 53],
       },
-      'quarterly': {
+      quarterly: {
         labels: ['Q1 Jan-Mar', 'Q2 Apr-Jun', 'Q3 Jul-Sep', 'Q4 Oct-Dec'],
         data: [173, 182, 167, 189],
       },
@@ -956,7 +1391,7 @@ export const schoolStudentsSummaryData = [
   },
   {
     id: 5,
-    imageSrc: 'src/assets/images/avatars/male-03.jpg',
+    imageSrc: '/assets/images/avatars/male-03.jpg',
     grade: '12 B',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -990,15 +1425,38 @@ export const schoolStudentsSummaryData = [
       },
     },
     progressTrendLineData: {
-      'weekly': {
-        labels: ['May 1-7', 'May 8-14', 'May 15-21', 'May 22-28', 'May 29-Jun 4', 'Jun 5-11', 'Jun 12-18', 'Jun 19-25', 'Jun 26-Jul 2'],
+      weekly: {
+        labels: [
+          'May 1-7',
+          'May 8-14',
+          'May 15-21',
+          'May 22-28',
+          'May 29-Jun 4',
+          'Jun 5-11',
+          'Jun 12-18',
+          'Jun 19-25',
+          'Jun 26-Jul 2',
+        ],
         data: [30, 35, 40, 33, 29, 34, 37, 39, 42],
       },
-      'monthly': {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      monthly: {
+        labels: [
+          'Jan',
+          'Feb',
+          'Mar',
+          'Apr',
+          'May',
+          'Jun',
+          'Jul',
+          'Aug',
+          'Sep',
+          'Oct',
+          'Nov',
+          'Dec',
+        ],
         data: [87, 81, 102, 103, 78, 76, 61, 43, 88, 106, 39, 93],
       },
-      'quarterly': {
+      quarterly: {
         labels: ['Q1 Jan-Mar', 'Q2 Apr-Jun', 'Q3 Jul-Sep', 'Q4 Oct-Dec'],
         data: [270, 287, 261, 293],
       },
@@ -1006,7 +1464,7 @@ export const schoolStudentsSummaryData = [
   },
   {
     id: 6,
-    imageSrc: 'src/assets/images/avatars/female-03.jpg',
+    imageSrc: '/assets/images/avatars/female-03.jpg',
     grade: '9 A',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -1040,15 +1498,38 @@ export const schoolStudentsSummaryData = [
       },
     },
     progressTrendLineData: {
-      'weekly': {
-        labels: ['May 1-7', 'May 8-14', 'May 15-21', 'May 22-28', 'May 29-Jun 4', 'Jun 5-11', 'Jun 12-18', 'Jun 19-25', 'Jun 26-Jul 2'],
+      weekly: {
+        labels: [
+          'May 1-7',
+          'May 8-14',
+          'May 15-21',
+          'May 22-28',
+          'May 29-Jun 4',
+          'Jun 5-11',
+          'Jun 12-18',
+          'Jun 19-25',
+          'Jun 26-Jul 2',
+        ],
         data: [15, 20, 25, 18, 14, 19, 22, 24, 27],
       },
-      'monthly': {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      monthly: {
+        labels: [
+          'Jan',
+          'Feb',
+          'Mar',
+          'Apr',
+          'May',
+          'Jun',
+          'Jul',
+          'Aug',
+          'Sep',
+          'Oct',
+          'Nov',
+          'Dec',
+        ],
         data: [42, 36, 57, 58, 33, 31, 16, 8, 53, 71, 3, 47],
       },
-      'quarterly': {
+      quarterly: {
         labels: ['Q1 Jan-Mar', 'Q2 Apr-Jun', 'Q3 Jul-Sep', 'Q4 Oct-Dec'],
         data: [126, 135, 120, 142],
       },
@@ -1056,7 +1537,7 @@ export const schoolStudentsSummaryData = [
   },
   {
     id: 7,
-    imageSrc: 'src/assets/images/avatars/male-04.jpg',
+    imageSrc: '/assets/images/avatars/male-04.jpg',
     grade: '10 B',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -1090,15 +1571,38 @@ export const schoolStudentsSummaryData = [
       },
     },
     progressTrendLineData: {
-      'weekly': {
-        labels: ['May 1-7', 'May 8-14', 'May 15-21', 'May 22-28', 'May 29-Jun 4', 'Jun 5-11', 'Jun 12-18', 'Jun 19-25', 'Jun 26-Jul 2'],
+      weekly: {
+        labels: [
+          'May 1-7',
+          'May 8-14',
+          'May 15-21',
+          'May 22-28',
+          'May 29-Jun 4',
+          'Jun 5-11',
+          'Jun 12-18',
+          'Jun 19-25',
+          'Jun 26-Jul 2',
+        ],
         data: [19, 24, 29, 22, 18, 23, 26, 28, 31],
       },
-      'monthly': {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      monthly: {
+        labels: [
+          'Jan',
+          'Feb',
+          'Mar',
+          'Apr',
+          'May',
+          'Jun',
+          'Jul',
+          'Aug',
+          'Sep',
+          'Oct',
+          'Nov',
+          'Dec',
+        ],
         data: [58, 52, 73, 74, 49, 47, 32, 14, 59, 77, 9, 53],
       },
-      'quarterly': {
+      quarterly: {
         labels: ['Q1 Jan-Mar', 'Q2 Apr-Jun', 'Q3 Jul-Sep', 'Q4 Oct-Dec'],
         data: [173, 182, 167, 189],
       },
@@ -1106,7 +1610,7 @@ export const schoolStudentsSummaryData = [
   },
   {
     id: 8,
-    imageSrc: 'src/assets/images/avatars/female-04.jpg',
+    imageSrc: '/assets/images/avatars/female-04.jpg',
     grade: '12 C',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -1140,15 +1644,38 @@ export const schoolStudentsSummaryData = [
       },
     },
     progressTrendLineData: {
-      'weekly': {
-        labels: ['May 1-7', 'May 8-14', 'May 15-21', 'May 22-28', 'May 29-Jun 4', 'Jun 5-11', 'Jun 12-18', 'Jun 19-25', 'Jun 26-Jul 2'],
+      weekly: {
+        labels: [
+          'May 1-7',
+          'May 8-14',
+          'May 15-21',
+          'May 22-28',
+          'May 29-Jun 4',
+          'Jun 5-11',
+          'Jun 12-18',
+          'Jun 19-25',
+          'Jun 26-Jul 2',
+        ],
         data: [32, 37, 42, 35, 31, 36, 39, 41, 44],
       },
-      'monthly': {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      monthly: {
+        labels: [
+          'Jan',
+          'Feb',
+          'Mar',
+          'Apr',
+          'May',
+          'Jun',
+          'Jul',
+          'Aug',
+          'Sep',
+          'Oct',
+          'Nov',
+          'Dec',
+        ],
         data: [97, 91, 112, 113, 88, 86, 71, 53, 98, 116, 49, 103],
       },
-      'quarterly': {
+      quarterly: {
         labels: ['Q1 Jan-Mar', 'Q2 Apr-Jun', 'Q3 Jul-Sep', 'Q4 Oct-Dec'],
         data: [300, 317, 291, 323],
       },
@@ -1156,7 +1683,7 @@ export const schoolStudentsSummaryData = [
   },
   {
     id: 9,
-    imageSrc: 'src/assets/images/avatars/male-05.jpg',
+    imageSrc: '/assets/images/avatars/male-05.jpg',
     grade: '11 A',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -1190,15 +1717,38 @@ export const schoolStudentsSummaryData = [
       },
     },
     progressTrendLineData: {
-      'weekly': {
-        labels: ['May 1-7', 'May 8-14', 'May 15-21', 'May 22-28', 'May 29-Jun 4', 'Jun 5-11', 'Jun 12-18', 'Jun 19-25', 'Jun 26-Jul 2'],
+      weekly: {
+        labels: [
+          'May 1-7',
+          'May 8-14',
+          'May 15-21',
+          'May 22-28',
+          'May 29-Jun 4',
+          'Jun 5-11',
+          'Jun 12-18',
+          'Jun 19-25',
+          'Jun 26-Jul 2',
+        ],
         data: [28, 33, 38, 31, 27, 32, 35, 37, 40],
       },
-      'monthly': {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      monthly: {
+        labels: [
+          'Jan',
+          'Feb',
+          'Mar',
+          'Apr',
+          'May',
+          'Jun',
+          'Jul',
+          'Aug',
+          'Sep',
+          'Oct',
+          'Nov',
+          'Dec',
+        ],
         data: [83, 77, 98, 99, 74, 72, 57, 39, 84, 102, 45, 89],
       },
-      'quarterly': {
+      quarterly: {
         labels: ['Q1 Jan-Mar', 'Q2 Apr-Jun', 'Q3 Jul-Sep', 'Q4 Oct-Dec'],
         data: [254, 271, 245, 277],
       },
@@ -1206,7 +1756,7 @@ export const schoolStudentsSummaryData = [
   },
   {
     id: 10,
-    imageSrc: 'src/assets/images/avatars/female-05.jpg',
+    imageSrc: '/assets/images/avatars/female-05.jpg',
     grade: '11 B',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -1240,15 +1790,38 @@ export const schoolStudentsSummaryData = [
       },
     },
     progressTrendLineData: {
-      'weekly': {
-        labels: ['May 1-7', 'May 8-14', 'May 15-21', 'May 22-28', 'May 29-Jun 4', 'Jun 5-11', 'Jun 12-18', 'Jun 19-25', 'Jun 26-Jul 2'],
+      weekly: {
+        labels: [
+          'May 1-7',
+          'May 8-14',
+          'May 15-21',
+          'May 22-28',
+          'May 29-Jun 4',
+          'Jun 5-11',
+          'Jun 12-18',
+          'Jun 19-25',
+          'Jun 26-Jul 2',
+        ],
         data: [26, 31, 36, 29, 25, 30, 33, 35, 38],
       },
-      'monthly': {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      monthly: {
+        labels: [
+          'Jan',
+          'Feb',
+          'Mar',
+          'Apr',
+          'May',
+          'Jun',
+          'Jul',
+          'Aug',
+          'Sep',
+          'Oct',
+          'Nov',
+          'Dec',
+        ],
         data: [77, 71, 92, 93, 68, 66, 51, 33, 78, 96, 29, 83],
       },
-      'quarterly': {
+      quarterly: {
         labels: ['Q1 Jan-Mar', 'Q2 Apr-Jun', 'Q3 Jul-Sep', 'Q4 Oct-Dec'],
         data: [236, 253, 227, 259],
       },
@@ -1256,7 +1829,7 @@ export const schoolStudentsSummaryData = [
   },
   {
     id: 11,
-    imageSrc: 'src/assets/images/avatars/female-06.jpg',
+    imageSrc: '/assets/images/avatars/female-06.jpg',
     grade: '9 C',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -1290,15 +1863,38 @@ export const schoolStudentsSummaryData = [
       },
     },
     progressTrendLineData: {
-      'weekly': {
-        labels: ['May 1-7', 'May 8-14', 'May 15-21', 'May 22-28', 'May 29-Jun 4', 'Jun 5-11', 'Jun 12-18', 'Jun 19-25', 'Jun 26-Jul 2'],
+      weekly: {
+        labels: [
+          'May 1-7',
+          'May 8-14',
+          'May 15-21',
+          'May 22-28',
+          'May 29-Jun 4',
+          'Jun 5-11',
+          'Jun 12-18',
+          'Jun 19-25',
+          'Jun 26-Jul 2',
+        ],
         data: [13, 18, 23, 16, 12, 17, 20, 22, 25],
       },
-      'monthly': {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      monthly: {
+        labels: [
+          'Jan',
+          'Feb',
+          'Mar',
+          'Apr',
+          'May',
+          'Jun',
+          'Jul',
+          'Aug',
+          'Sep',
+          'Oct',
+          'Nov',
+          'Dec',
+        ],
         data: [36, 30, 51, 52, 27, 25, 10, 2, 47, 65, 0, 33],
       },
-      'quarterly': {
+      quarterly: {
         labels: ['Q1 Jan-Mar', 'Q2 Apr-Jun', 'Q3 Jul-Sep', 'Q4 Oct-Dec'],
         data: [108, 117, 102, 124],
       },
@@ -1306,7 +1902,7 @@ export const schoolStudentsSummaryData = [
   },
   {
     id: 12,
-    imageSrc: 'src/assets/images/avatars/male-06.jpg',
+    imageSrc: '/assets/images/avatars/male-06.jpg',
     grade: '10 C',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -1340,15 +1936,38 @@ export const schoolStudentsSummaryData = [
       },
     },
     progressTrendLineData: {
-      'weekly': {
-        labels: ['May 1-7', 'May 8-14', 'May 15-21', 'May 22-28', 'May 29-Jun 4', 'Jun 5-11', 'Jun 12-18', 'Jun 19-25', 'Jun 26-Jul 2'],
+      weekly: {
+        labels: [
+          'May 1-7',
+          'May 8-14',
+          'May 15-21',
+          'May 22-28',
+          'May 29-Jun 4',
+          'Jun 5-11',
+          'Jun 12-18',
+          'Jun 19-25',
+          'Jun 26-Jul 2',
+        ],
         data: [25, 30, 35, 28, 24, 29, 32, 34, 37],
       },
-      'monthly': {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      monthly: {
+        labels: [
+          'Jan',
+          'Feb',
+          'Mar',
+          'Apr',
+          'May',
+          'Jun',
+          'Jul',
+          'Aug',
+          'Sep',
+          'Oct',
+          'Nov',
+          'Dec',
+        ],
         data: [72, 67, 89, 93, 77, 75, 63, 46, 81, 96, 33, 83],
       },
-      'quarterly': {
+      quarterly: {
         labels: ['Q1 Jan-Mar', 'Q2 Apr-Jun', 'Q3 Jul-Sep', 'Q4 Oct-Dec'],
         data: [218, 235, 209, 241],
       },
@@ -1356,7 +1975,7 @@ export const schoolStudentsSummaryData = [
   },
   {
     id: 13,
-    imageSrc: 'src/assets/images/avatars/female-07.jpg',
+    imageSrc: '/assets/images/avatars/female-07.jpg',
     grade: '12 A',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -1390,15 +2009,38 @@ export const schoolStudentsSummaryData = [
       },
     },
     progressTrendLineData: {
-      'weekly': {
-        labels: ['May 1-7', 'May 8-14', 'May 15-21', 'May 22-28', 'May 29-Jun 4', 'Jun 5-11', 'Jun 12-18', 'Jun 19-25', 'Jun 26-Jul 2'],
+      weekly: {
+        labels: [
+          'May 1-7',
+          'May 8-14',
+          'May 15-21',
+          'May 22-28',
+          'May 29-Jun 4',
+          'Jun 5-11',
+          'Jun 12-18',
+          'Jun 19-25',
+          'Jun 26-Jul 2',
+        ],
         data: [27, 32, 37, 30, 26, 31, 34, 36, 39],
       },
-      'monthly': {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      monthly: {
+        labels: [
+          'Jan',
+          'Feb',
+          'Mar',
+          'Apr',
+          'May',
+          'Jun',
+          'Jul',
+          'Aug',
+          'Sep',
+          'Oct',
+          'Nov',
+          'Dec',
+        ],
         data: [82, 76, 97, 98, 73, 71, 56, 38, 83, 101, 44, 88],
       },
-      'quarterly': {
+      quarterly: {
         labels: ['Q1 Jan-Mar', 'Q2 Apr-Jun', 'Q3 Jul-Sep', 'Q4 Oct-Dec'],
         data: [249, 266, 240, 272],
       },
@@ -1406,7 +2048,7 @@ export const schoolStudentsSummaryData = [
   },
   {
     id: 14,
-    imageSrc: 'src/assets/images/avatars/male-07.jpg',
+    imageSrc: '/assets/images/avatars/male-07.jpg',
     grade: '11 A',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -1440,15 +2082,38 @@ export const schoolStudentsSummaryData = [
       },
     },
     progressTrendLineData: {
-      'weekly': {
-        labels: ['May 1-7', 'May 8-14', 'May 15-21', 'May 22-28', 'May 29-Jun 4', 'Jun 5-11', 'Jun 12-18', 'Jun 19-25', 'Jun 26-Jul 2'],
+      weekly: {
+        labels: [
+          'May 1-7',
+          'May 8-14',
+          'May 15-21',
+          'May 22-28',
+          'May 29-Jun 4',
+          'Jun 5-11',
+          'Jun 12-18',
+          'Jun 19-25',
+          'Jun 26-Jul 2',
+        ],
         data: [27, 32, 37, 30, 26, 31, 34, 36, 39],
       },
-      'monthly': {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      monthly: {
+        labels: [
+          'Jan',
+          'Feb',
+          'Mar',
+          'Apr',
+          'May',
+          'Jun',
+          'Jul',
+          'Aug',
+          'Sep',
+          'Oct',
+          'Nov',
+          'Dec',
+        ],
         data: [82, 76, 97, 98, 73, 71, 56, 38, 83, 101, 44, 88],
       },
-      'quarterly': {
+      quarterly: {
         labels: ['Q1 Jan-Mar', 'Q2 Apr-Jun', 'Q3 Jul-Sep', 'Q4 Oct-Dec'],
         data: [249, 266, 240, 272],
       },
@@ -1456,7 +2121,7 @@ export const schoolStudentsSummaryData = [
   },
   {
     id: 15,
-    imageSrc: 'src/assets/images/avatars/female-08.jpg',
+    imageSrc: '/assets/images/avatars/female-08.jpg',
     grade: '11 A',
     averageIndicatorsData: {
       'ave-cefr': {
@@ -1490,19 +2155,41 @@ export const schoolStudentsSummaryData = [
       },
     },
     progressTrendLineData: {
-      'weekly': {
-        labels: ['May 1-7', 'May 8-14', 'May 15-21', 'May 22-28', 'May 29-Jun 4', 'Jun 5-11', 'Jun 12-18', 'Jun 19-25', 'Jun 26-Jul 2'],
+      weekly: {
+        labels: [
+          'May 1-7',
+          'May 8-14',
+          'May 15-21',
+          'May 22-28',
+          'May 29-Jun 4',
+          'Jun 5-11',
+          'Jun 12-18',
+          'Jun 19-25',
+          'Jun 26-Jul 2',
+        ],
         data: [27, 32, 37, 30, 26, 31, 34, 36, 39],
       },
-      'monthly': {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      monthly: {
+        labels: [
+          'Jan',
+          'Feb',
+          'Mar',
+          'Apr',
+          'May',
+          'Jun',
+          'Jul',
+          'Aug',
+          'Sep',
+          'Oct',
+          'Nov',
+          'Dec',
+        ],
         data: [82, 76, 97, 98, 73, 71, 56, 38, 83, 101, 44, 88],
       },
-      'quarterly': {
+      quarterly: {
         labels: ['Q1 Jan-Mar', 'Q2 Apr-Jun', 'Q3 Jul-Sep', 'Q4 Oct-Dec'],
         data: [249, 266, 240, 272],
       },
     },
-  }
-
+  },
 ];

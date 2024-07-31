@@ -1,6 +1,4 @@
-import type {
-  User,
-} from 'src/interfaces/app_interfaces';
+import type { User } from 'src/interfaces/app_interfaces';
 
 import { UserRole } from 'src/enums/userRoles';
 import { UserType } from 'src/enums/userTypes';
@@ -14,7 +12,7 @@ export const Users: User[] = [
     user_role: UserRole.ADMIN,
     user_type: UserType.COMPANY,
     company_id: 1,
-    imageUrl: 'src/assets/images/avatars/male-01.jpg',
+    imageUrl: '/assets/images/avatars/male-01.jpg',
   },
   {
     id: 2,
@@ -24,7 +22,7 @@ export const Users: User[] = [
     user_role: UserRole.TEACHER,
     user_type: UserType.SCHOOL,
     school_id: 2,
-    imageUrl: 'src/assets/images/avatars/female-01.jpg'
+    imageUrl: '/assets/images/avatars/female-01.jpg',
     // imageUrl: '',
   },
   {
@@ -34,7 +32,7 @@ export const Users: User[] = [
     password: 'password789',
     user_role: UserRole.ADMIN,
     user_type: UserType.TUTOR,
-    imageUrl: 'src/assets/images/avatars/male-02.jpg'
+    imageUrl: '/assets/images/avatars/male-02.jpg',
   },
   {
     id: 4,
@@ -44,7 +42,7 @@ export const Users: User[] = [
     user_role: UserRole.ADMIN,
     user_type: UserType.SCHOOL,
     school_id: 3,
-    imageUrl: 'src/assets/images/avatars/female-02.jpg'
+    imageUrl: '/assets/images/avatars/female-02.jpg',
   },
   {
     id: 5,
@@ -54,7 +52,7 @@ export const Users: User[] = [
     user_role: UserRole.TEACHER,
     user_type: UserType.COMPANY,
     company_id: 4,
-    imageUrl: 'src/assets/images/avatars/male-03.jpg'
+    imageUrl: '/assets/images/avatars/male-03.jpg',
   },
   {
     id: 6,
@@ -63,7 +61,7 @@ export const Users: User[] = [
     password: 'password303',
     user_role: UserRole.ADMIN,
     user_type: UserType.TUTOR,
-    imageUrl: 'src/assets/images/avatars/female-03.jpg'
+    imageUrl: '/assets/images/avatars/female-03.jpg',
   },
   {
     id: 7,
@@ -73,7 +71,7 @@ export const Users: User[] = [
     user_role: UserRole.TEACHER,
     user_type: UserType.SCHOOL,
     school_id: 5,
-    imageUrl: 'src/assets/images/avatars/male-04.jpg'
+    imageUrl: '/assets/images/avatars/male-04.jpg',
   },
   {
     id: 8,
@@ -83,7 +81,7 @@ export const Users: User[] = [
     user_role: UserRole.ADMIN,
     user_type: UserType.COMPANY,
     company_id: 6,
-    imageUrl: 'src/assets/images/avatars/female-04.jpg'
+    imageUrl: '/assets/images/avatars/female-04.jpg',
   },
   {
     id: 9,
@@ -92,7 +90,7 @@ export const Users: User[] = [
     password: 'password606',
     user_role: UserRole.ADMIN,
     user_type: UserType.TUTOR,
-    imageUrl: 'src/assets/images/avatars/male-05.jpg'
+    imageUrl: '/assets/images/avatars/male-05.jpg',
   },
   {
     id: 10,
@@ -102,7 +100,7 @@ export const Users: User[] = [
     user_role: UserRole.ADMIN,
     user_type: UserType.SCHOOL,
     school_id: 7,
-    imageUrl: 'src/assets/images/avatars/female-05.jpg'
+    imageUrl: '/assets/images/avatars/female-05.jpg',
   },
   {
     id: 11,
@@ -112,7 +110,7 @@ export const Users: User[] = [
     user_role: UserRole.TEACHER,
     user_type: UserType.COMPANY,
     company_id: 8,
-    imageUrl: 'src/assets/images/avatars/male-06.jpg'
+    imageUrl: '/assets/images/avatars/male-06.jpg',
   },
   {
     id: 12,
@@ -121,7 +119,7 @@ export const Users: User[] = [
     password: 'password909',
     user_role: UserRole.ADMIN,
     user_type: UserType.TUTOR,
-    imageUrl: 'src/assets/images/avatars/female-06.jpg'
+    imageUrl: '/assets/images/avatars/female-06.jpg',
   },
   {
     id: 13,
@@ -131,7 +129,7 @@ export const Users: User[] = [
     user_role: UserRole.TEACHER,
     user_type: UserType.SCHOOL,
     school_id: 9,
-    imageUrl: 'src/assets/images/avatars/male-07.jpg'
+    imageUrl: '/assets/images/avatars/male-07.jpg',
   },
   {
     id: 14,
@@ -141,7 +139,7 @@ export const Users: User[] = [
     user_role: UserRole.ADMIN,
     user_type: UserType.COMPANY,
     company_id: 10,
-    imageUrl: 'src/assets/images/avatars/female-07.jpg'
+    imageUrl: '/assets/images/avatars/female-07.jpg',
   },
   {
     id: 15,
@@ -150,6 +148,6 @@ export const Users: User[] = [
     password: 'password222',
     user_role: UserRole.ADMIN,
     user_type: UserType.TUTOR,
-    imageUrl: 'src/assets/images/avatars/male-08.jpg'
-  }
+    imageUrl: '/assets/images/avatars/male-08.jpg',
+  },
 ];
